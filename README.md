@@ -1,24 +1,18 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+# Hotel_Engine
+Hotel_Engine is a Ruby server for dealing with music search.
 
-Things you may want to cover:
+## Usage
+URL: https://radiant-river-21750.herokuapp.com/searches?term=""
+Params: terms
 
-* Ruby version
+With the search term, user can get music list which titles include query word.
+If the query word is searched first time, the Hotel_Engine API will fetch data from 3rd party API.
+If the query word has been searched before, the Hotel_Engine API will fetch data from database.
 
-* System dependencies
+Example: https://radiant-river-21750.herokuapp.com/searches?term="winter"
 
-* Configuration
 
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+## Github
+https://github.com/piaoyehong1107/hotel_engine
