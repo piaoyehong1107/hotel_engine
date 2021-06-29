@@ -10,7 +10,7 @@ class SearchesController < ApplicationController
             http.verify_mode = OpenSSL::SSL::VERIFY_NONE
     
             request = Net::HTTP::Get.new(url)
-            request["x-rapidapi-key"] = '6d4d8a6cd6mshe71720ae222ee71p14c900jsn605699b2c370'
+            request["x-rapidapi-key"] = ENV['API_KEY']
             request["x-rapidapi-host"] = 'shazam.p.rapidapi.com'
     
             response = http.request(request)
